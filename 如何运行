@@ -1,0 +1,23 @@
+主要的python包：
+torch         2.4.0
+transformers  4.50.0
+sglang        0.3.3
+其他的python包见《依赖》（如果提示需要）
+
+准备：需要自己准备数据集。
+
+首先，bash SGLang.sh，作用是开启大模型后端。里面每行是一个命令如下：
+
+CUDA_VISIBLE_DEVICES=1 python3 -m sglang.launch_server --model-path /data/sdb2/wyh/models/Mistral-7B-Instruct-v0.3 --attention-backend triton --sampling-backend pytorch --disable-radix-cache --disable-regex-jump-forward --disable-cuda-graph --disable-cuda-graph-padding --disable-disk-cache --disable-custom-all-reduce --disable-mla --random-seed 7 --host 0.0.0.0 --port 30003 --mem-fraction-static 0.8 --max-running-request 1
+
+1、“CUDA_VISIBLE_DEVICES=1”这里的数字需要根据显卡空闲情况选一个空闲的显卡（nvidia-smi命令看显卡空闲情况）。
+2、“--model-path /data/sdb2/wyh/models/Mistral-7B-Instruct-v0.3”部分是大模型路径，可以替换为其他路径，一般是/data/sdb2/wyh/models或者/data/sdb2/lzy/LLM路径下的
+3、上面的命令是确保可复现，但是执行很慢，所以也可以如下（执行更快）：
+
+CUDA_VISIBLE_DEVICES=1 python3 -m sglang.launch_server --model-path /data/sdb2/wyh/models/Mistral-7B-Instruct-v0.3 --attention-backend triton --sampling-backend pytorch --random-seed 7 --host 0.0.0.0 --port 30001 --mem-fraction-static 0.8 --max-running-request 1
+
+
+
+然后，python MainEAE.py，这个是主文件。
+
+prompt主要在askLLM.py里的ask_eae函数。
