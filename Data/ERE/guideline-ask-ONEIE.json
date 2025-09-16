@@ -1,0 +1,374 @@
+{
+  "Life:Be-Born": {
+    "definition": "some people are born in somewhere",
+    "degree-definition": "The event is related to life and someone is given birth to.",
+    "degree-template": "somebody was born in somewhere.",
+    "args": {
+      "Person": "Who are born",
+      "Place": "Where does the event happen"
+    }
+  },
+  "Life:Marry": {
+    "definition": "some people get married in somewhere",
+    "degree-definition": "The event is related to life and someone is married.",
+    "degree-template": "somebody got married in somewhere.",
+    "args": {
+      "Person": "Who marry or who are married",
+      "Place": "Where does the event happen"
+    }
+  },
+  "Life:Divorce": {
+    "definition": "some people divorce in somewhere",
+    "degree-definition": "The event is related to life and someone was divorced.",
+    "degree-template": "somebody divorced in somewhere.",
+    "args": {
+      "Person": "Who divorce",
+      "Place": "Where does the event happen"
+    }
+  },
+  "Life:Injure": {
+    "definition": "somebody or some organization leads to some victim injured by some instrument in somewhere",
+    "degree-definition": "The event is related to life and someone is injured.",
+    "degree-template": "somebody or some organization led to some victim injured by some way in somewhere.",
+    "args": {
+      "Agent": "Who cause the injury",
+      "Victim": "Who get injured",
+      "Instrument": "What device is used to cause the injury",
+      "Place": "Where does the event happen"
+    }
+  },
+  "Life:Die": {
+    "definition": "somebody or some organization leads to some victim died by some instrument in somewhere",
+    "degree-definition": "The event is related to life and someone died.",
+    "degree-template": "somebody or some organization led to some victim died by some way in somewhere.",
+    "args": {
+      "Agent": "Who cause the death",
+      "Victim": "Who die",
+      "Instrument": "What device is used to cause the death",
+      "Place": "Where does the event happen"
+    }
+  },
+  "Movement:Transport-Artifact": {
+    "definition": "something is sent to somewhere from some place by some vehicle, and somebody or some organization is responsible for the transport",
+    "degree-definition": "The event is related to movement. The event occurs when a weapon or vehicle is moved from one place to another.",
+    "degree-template": "something was sent to somewhere from some place by some vehicle, and somebody or some organization was responsible for the transport.",
+    "args": {
+      "Agent": "Who is responsible for the movement",
+      "Artifact": "What is moved",
+      "Origin": "Where the movement starts from",
+      "Destination": "Where the movement is directed to"
+    }
+  },
+  "Movement:Transport-Person": {
+    "definition": "some people go to somewhere from some place by some vehicle, and somebody or some organization is responsible for the transport",
+    "degree-definition": "The event is related to movement. The event occurs when a weapon or vehicle is moved from one place to another.",
+    "degree-template": "something was sent to somewhere from some place by some vehicle, and somebody or some organization was responsible for the transport.",
+    "args": {
+      "Agent": "Who is responsible for the movement",
+      "Person": "Who move",
+      "Instrument": "What vehicle is used to move the people or the things",
+      "Origin": "Where the movement starts from",
+      "Destination": "Where the movement is directed to"
+    }
+  },
+  "Transaction:Transaction": {
+    "definition": "some people get something from some other people, some people benefit from the transaction",
+    "degree-definition": "The event is related to someone appealing the decision of a court.",
+    "degree-template": "some other in somewhere appealed the adjudication from some adjudicator.",
+    "args": {
+      "Recipient": "Who get the transferred item",
+      "Giver": "Who give the transferred item",
+      "Beneficiary": "Who benefit from the transaction"
+    }
+  },
+  "Transaction:Transfer-Ownership": {
+    "definition": "some people get something from some other people in somewhere, some people benefit from the transaction",
+    "degree-definition": "The event occurs when an item or an organization is sold or gave to some other.",
+    "degree-template": "someone got something from somewhere in somewhere.",
+    "args": {
+      "Recipient": "Who get the transferred item",
+      "Giver": "Who give the transferred item",
+      "Beneficiary": "Who benefit from the transaction",
+      "Thing": "What is the transferred item",
+      "Place": "Where does the event happen"
+    }
+  },
+  "Transaction:Transfer-Money": {
+    "definition": "some people pay some other people in somewhere, some people benefit from the paytion",
+    "degree-definition": "The event is related to transaction. The event occurs when someone is giving, receiving, borrowing, or lending money.",
+    "degree-template": "someone paid some other in somewhere.",
+    "args": {
+      "Giver": "Who give money",
+      "Recipient": "Who get money",
+      "Beneficiary": "Who benefit from the event",
+      "Place": "Where does the event happen"
+    }
+  },
+  "Business:Start-Org": {
+    "definition": "some people or some organization launch some organization in somewhere",
+    "degree-definition": "The event is related to a new organization being created.",
+    "degree-template": "somebody or some organization launched some organization in somewhere.",
+    "args": {
+      "Agent": "Who create the organizations",
+      "Org": "What organizations are created",
+      "Place": "Where does the event happen"
+    }
+  },
+  "Business:Merge-Org": {
+    "definition": "some organization is merged",
+    "degree-definition": "The event is related to two or more organization coming together to form a new organization.",
+    "degree-template": "some organization was merged.",
+    "args": {
+      "Org": "What organization is merged"
+    }
+  },
+  "Business:Declare-Bankruptcy": {
+    "definition": "some organization declares bankruptcy",
+    "degree-definition": "The event is related to some organization declaring bankruptcy.",
+    "degree-template": "some organization declared bankruptcy.",
+    "args": {
+      "Org": "What organization declares bankruptcy"
+    }
+  },
+  "Business:End-Org": {
+    "definition": "some organization ceases to exist in somewhere",
+    "degree-definition": "The event is related to some organization ceasing to exist.",
+    "degree-template": "some organization dissolved.",
+    "args": {
+      "Org": "What organization ceases to exist",
+      "Place": "Where does the event happen"
+    }
+  },
+  "Conflict:Attack": {
+    "definition": "some attacker attack some other by some instrument in somewhere",
+    "degree-definition": "The event is related to conflict and some violent physical act.",
+    "degree-template": "some attacker attacked some facility, someone, or some organization by some way in somewhere.",
+    "args": {
+      "Attacker": "Who participate in the attack",
+      "Target": "What is the target of the attack (including unintended targets)",
+      "Instrument": "What instrument is used in the attack",
+      "Place": "Where does the event happen"
+    }
+  },
+  "Conflict:Demonstrate": {
+    "definition": "some people protest or demonstrate in somewhere",
+    "degree-definition": "The event is related to a large number of people coming together to protest.",
+    "degree-template": "some people or some organization protested at somewhere.",
+    "args": {
+      "Entity": "Who protest or demonstrate",
+      "Place": "Where does the event happen"
+    }
+  },
+  "Contact:Meet": {
+    "definition": "some people meet at somewhere",
+    "degree-definition": "The event is related to a group of people meeting and interacting with one another face-to-face.",
+    "degree-template": "some people or some organization met at somewhere.",
+    "args": {
+      "Entity": "Who meet and interact with one another",
+      "Place": "Where does the event happen"
+    }
+  },
+  "Contact:Broadcast": {
+    "definition": "some people broadcast to some other people.",
+    "degree-definition": "The event is related to someone appealing the decision of a court.",
+    "degree-template": "some other in somewhere appealed the adjudication from some adjudicator.",
+    "args": {
+      "Entity": "Who broadcast or announce",
+      "Audience": "What is the audience of the broadcast"
+    }
+  },
+  "Contact:Contact": {
+    "definition": "some people communicate with some other people",
+    "degree-definition": "The event is related to someone appealing the decision of a court.",
+    "degree-template": "some other in somewhere appealed the adjudication from some adjudicator.",
+    "args": {
+      "Entity": "Who participate in the communication"
+    }
+  },
+  "Contact:Correspondence": {
+    "definition": "some people call, text or write to some other people",
+    "degree-definition": "The event is related to someone appealing the decision of a court.",
+    "degree-template": "some other in somewhere appealed the adjudication from some adjudicator.",
+    "args": {
+      "Entity": "Who participate in the communication"
+    }
+  },
+  "Personnel:Start-Position": {
+    "definition": "some people begin working for some other in somewhere",
+    "degree-definition": "The event is related to a person begins working for an organization or a hiring manager.",
+    "degree-template": "somebody got new job and was hired by some people or some organization in somewhere.",
+    "args": {
+      "Person": "Who begin working",
+      "Entity": "Who or what organization do the people work for",
+      "Place": "Where does the event happen"
+    }
+  },
+  "Personnel:End-Position": {
+    "definition": "some people stop working for some other in somewhere",
+    "degree-definition": "The event is related to a person stops working for an organization or a hiring manager.",
+    "degree-template": "somebody stopped working for some people or some organization at somewhere.",
+    "args": {
+      "Person": "Who stop working",
+      "Entity": "Who or what organization did the people used to work for",
+      "Place": "Where does the event happen"
+    }
+  },
+  "Personnel:Nominate": {
+    "definition": "some people are nominated by some other",
+    "degree-definition": "The event is related to a person being nominated for a position.",
+    "degree-template": "somebody was nominated by some people or some organization to do a job.",
+    "args": {
+      "Person": "Who are nominated",
+      "Agent": "Who nominate the people"
+    }
+  },
+  "Personnel:Elect": {
+    "definition": "some people are elected by some other in somewhere",
+    "degree-definition": "The event is related to a candidate wins an election.",
+    "degree-template": "somebody was elected a position, and the election was voted by some people or some organization in somewhere.",
+    "args": {
+      "Person": "Who are elected",
+      "Agent": "Who elect or vote",
+      "Place": "Where does the event happen"
+    }
+  },
+  "Justice:Arrest-Jail": {
+    "definition": "some people are jailed or arrested by some other in somewhere",
+    "degree-definition": "The event is related to a person getting arrested or a person being sent to jail.",
+    "degree-template": "somebody was sent to jailed or arrested by somebody or some organization in somewhere.",
+    "args": {
+      "Person": "Who are jailed or arrested",
+      "Agent": "Who jail or arrest the people",
+      "Place": "Where does the event happen"
+    }
+  },
+  "Justice:Release-Parole": {
+    "definition": "some people are released by some other in somewhere",
+    "degree-definition": "The event is related to an end to someone's custody in prison.",
+    "degree-template": "somebody was released by some people or some organization from somewhere.",
+    "args": {
+      "Person": "Who are released",
+      "Agent": "Who release or request the release of the people",
+      "Place": "Where does the event happen"
+    }
+  },
+  "Justice:Trial-Hearing": {
+    "definition": "some people, prosecuted by some other, face a trial in somewhere, and the hearing is judged by some adjudicator",
+    "degree-definition": "The event is related to a trial or hearing for someone.",
+    "degree-template": "somebody, prosecuted by some other, faced a trial in somewhere, and the hearing was judged by some adjudicator.",
+    "args": {
+      "Defendant": "Who are on trial or given a hearing",
+      "Prosecutor": "Who prosecute the people",
+      "Adjudicator": "What judge or court presides over the trial",
+      "Place": "Where does the event happen"
+    }
+  },
+  "Justice:Charge-Indict": {
+    "definition": "some people are charged by some other in somewhere, and the adjudication is judged by some adjudicator",
+    "degree-definition": "The event is related to someone or some organization being accused of a crime.",
+    "degree-template": "somebody was charged by some other in somewhere, and the adjudication was judged by some adjudicator.",
+    "args": {
+      "Defendant": "Who are accused or indicted",
+      "Prosecutor": "Who accuse or indicte the people",
+      "Adjudicator": "What judge or court accepts the accusation",
+      "Place": "Where does the event happen"
+    }
+  },
+  "Justice:Sue": {
+    "definition": "some people are sued by some other in somewhere, and the adjudication is judged by some adjudicator",
+    "degree-definition": "The event is related to a court proceeding that has been initiated and someone sue the other.",
+    "degree-template": "somebody was sued by some other in somewhere, and the adjudication was judged by some adjudicator.",
+    "args": {
+      "Defendant": "Who are sued",
+      "Plaintiff": "Who sue the people",
+      "Adjudicator": "What judge or court accepts the lawsuit",
+      "Place": "Where does the event happen"
+    }
+  },
+  "Justice:Convict": {
+    "definition": "some people are convicted of a crime in somewhere, and the adjudication is judged by some adjudicator",
+    "degree-definition": "The event is related to someone being found guilty of a crime.",
+    "degree-template": "somebody was convicted of a crime in somewhere, and the adjudication was judged by some adjudicator.",
+    "args": {
+      "Defendant": "Who are convicted",
+      "Adjudicator": "Who convict the people",
+      "Place": "Where does the event happen"
+    }
+  },
+  "Justice:Sentence": {
+    "definition": "some people are sentenced to punishment in somewhere, and the adjudication is judged by some adjudicator",
+    "degree-definition": "The event is related to someone being sentenced to punishment because of a crime.",
+    "degree-template": "somebody was sentenced to punishment in somewhere, and the adjudication was judged by some adjudicator.",
+    "args": {
+      "Defendant": "Who are sentenced",
+      "Adjudicator": "What judge or court sentences the people",
+      "Place": "Where does the event happen"
+    }
+  },
+  "Justice:Fine": {
+    "definition": "some people or some organizations are fined",
+    "degree-definition": "The event is related to someone being issued a financial punishment.",
+    "degree-template": "some people or some organization in somewhere was ordered by some adjudicator to pay a fine.",
+    "args": {
+      "Entity": "Who or what organizations are fined"
+    }
+  },
+  "Justice:Execute": {
+    "definition": "some people are executed by some other in somewhere",
+    "degree-definition": "The event is related to someone being executed to death.",
+    "degree-template": "somebody was executed by somebody or some organization at somewhere.",
+    "args": {
+      "Person": "Who are executed to death",
+      "Agent": "Who carry out the execution",
+      "Place": "Where does the event happen"
+    }
+  },
+  "Justice:Extradite": {
+    "definition": "some people are extradited from one place to another place",
+    "degree-definition": "The event is related to justice. The event occurs when a person was extradited from one place to another place.",
+    "degree-template": "somebody was extradicted to somewhere from some place, and somebody or some organization was responsible for the extradition.",
+    "args": {
+      "Agent": "Who are responsible for or promote the extradition",
+      "Person": "Who are extradited",
+      "Destination": "Where are the people extradited to"
+    }
+  },
+  "Justice:Acquit": {
+    "definition": "some people are acquitted of the charges by some adjudicator",
+    "degree-definition": "The event is related to someone being acquitted.",
+    "degree-template": "somebody was acquitted of the charges by some adjudicator.",
+    "args": {
+      "Defendant": "Who are acquitted",
+      "Adjudicator": "What judge or court acquits the people"
+    }
+  },
+  "Justice:Pardon": {
+    "definition": "some people receive a pardon from some adjudicator",
+    "degree-definition": "The event is related to someone being pardoned.",
+    "degree-template": "somebody received a pardon from some adjudicator.",
+    "args": {
+      "Defendant": "Who receive a pardon",
+      "Adjudicator": "What state official does the pardoning"
+    }
+  },
+  "Justice:Appeal": {
+    "definition": "some people in somewhere appeal the adjudication from some adjudicator",
+    "degree-definition": "The event is related to someone appealing the decision of a court.",
+    "degree-template": "some other in somewhere appealed the adjudication from some adjudicator.",
+    "args": {
+      "Prosecutor": "Who appeal",
+      "Adjudicator": "What judge or court receive the appeal",
+      "Place": "Where does the event happen"
+    }
+  },
+  "Manufacture:Artifact": {
+    "definition": "some people produce or build something in somewhere",
+    "degree-definition": "The event is related to someone appealing the decision of a court.",
+    "degree-template": "some other in somewhere appealed the adjudication from some adjudicator.",
+    "args": {
+      "Artifact": "What is produced or built",
+      "Agent": "Who or what organizations produce or build the artifact",
+      "Place": "Where does the event happen"
+    }
+  }
+}
